@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: url('img/download.jpg');
+}
+.icon-small{
+    width: 150px;
+    height: 150px;
+}
+
+.icon-medium{
+    width: 300px;
+    height: 300px;
+}
+
+.icon{
+    width: 300px;
+    height: 300px;
+}
