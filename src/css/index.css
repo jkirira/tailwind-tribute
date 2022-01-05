@@ -4,7 +4,21 @@
 
 body{
     background: url('img/download.jpg');
+    font-size: larger;
 }
+
+.title{
+    @apply font-black text-4xl;
+
+    margin: 20px 0;
+}
+
+.title-small{
+    @apply font-black text-2xl;
+
+    margin: 20px 0;
+}
+
 .icon-small{
     width: 150px;
     height: 150px;
