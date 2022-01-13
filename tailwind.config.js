@@ -1,12 +1,17 @@
 module.exports = {
-  content: [
-    "src/index.html",
-    "src/index.php",
-    
+  purge: [
+    './src/*.html',
+    './src/*.js',
   ],
+
+  media: false,
+
+  content: [],
+
   theme: {
     extend: {},
   },
+
   plugins: [],
-}
-//"./src/**/*.html"
+
+};
