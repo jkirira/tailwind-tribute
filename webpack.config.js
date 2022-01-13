@@ -8,7 +8,7 @@ const webpack = require("webpack"),
         autoprefixer = require("autoprefixer");
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
 
     entry: './src/js/app.js',
 
