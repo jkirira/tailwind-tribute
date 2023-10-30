@@ -6,40 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute</title>
 
-    <link href="css/output.css" rel="stylesheet">
+    <!-- <link href="css/output.css" rel="stylesheet"> -->
 
 </head>
 <body>
     
-    <div class="grid grid-cols-1 p-2 md:grid-cols-2 w-auto bg-black text-white">
-        <div class="logo flex items-center justify-center md:justify-start md:ml-5">
+    <!-- title -->
+    <div class="flex bg-black text-white lg:h-14">
+        <div class="logo flex items-center justify-center w-full lg:w-1/5">
             <p class="text-center">Tribute</p>
         </div>
-
-        <div class=" menu flex flex-end items-center justify-center">
-            <ul class="flex flex-col md:flex-row list-none">
-                <li class="text-center px-6"><a href="#bio">Bio</a></li>
-                <li class="text-center px-6"><a href="#appearances">Appearances</a></li>
-                <li class="text-center px-6"><a href="#trophies">Trophies</a></li>
-            </ul>
-        </div>
-    
     </div>
 
-    <div class="grid  grid-cols-1 lg:grid-cols-3 h-auto w-auto">
+    <!-- main -->
+    <div class="grid grid-cols-1 lg:grid-cols-5">
 
-            <div class="hidden h-0 lg:flex lg:h-auto"></div>
+            <!-- side bar -->
+            <div class="flex flex-row items-center h-full lg:flex-col lg:col-span-1 lg:bg-gray-100">
 
-            <div class="grid grid-cols-1 w-auto">
+                <div class="menu flex border border-grey-300 w-full lg:mt-7 items-center justify-center lg:sticky lg:top-0">
+                    <ul class="flex flex-row justify-around list-none lg:flex-col ">
+                        <li class="text-center px-6"><a href="#bio">Bio</a></li>
+                        <li class="text-center px-6"><a href="#appearances">Appearances</a></li>
+                        <li class="text-center px-6"><a href="#trophies">Trophies</a></li>
+                    </ul>
+                </div>
 
-                <div class="flex flex-col items-center mt-4">
-                    <h2 class="text-center text-lg font-black">Wayne Rooney</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:col-span-4">
+
+                <div class="flex flex-col flex-wrap items-center mt-4">
+                    <h2 class="title text-center">Wayne Rooney</h2>
                     <figure class="flex flex-col items-center justify-center">
-                        <img class="rounded-full" src="/img/Rooney_1.jpg" alt="Wayne Rooney at Manchester United">
+                        <img class="rounded-full" src="./img/Rooney_1.jpg" alt="Wayne Rooney at Manchester United">
                         <figcaption>Wayne Rooney at Manchester United in 2016.</figcaption>
                     </figure>
-                    <section class="flex flex-col items-center mt-5 items-left" id="bio">
-                        <h3 class="text-lg font-black">Bio</h3> 
+                    <section class="flex flex-col mt-5 items-left" id="bio">
+                        <h3 class="title-small">Bio</h3> 
                         <p>Full name: &nbsp Wayne Mark Rooney</p>
                         <p>Date of birth: &nbsp 24 October 1985 (age 36)</p>
                         <p>Place of birth: &nbsp Liverpool, England</p>
@@ -50,39 +54,39 @@
 
                 <div class="flex flex-col items-center justify-center mt-2 p-3">
                     <section id="appearances p-3">
-                        <h3 class="text-center text-lg font-black px-3">Appearances</h3>
+                        <h3 class="text-center title-small">Appearances</h3>
                         <table class="mt-5">
 						<thead>
 							<tr>
-								<th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">Years</th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">Team</th>
-                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">No. of Appearances</th>
+								<th class=" border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600 px-5 py-3">Years</th>
+                                <th class=" border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600 md:px-5 md:py-3">Team</th>
+                                <th class=" border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600 md:px-5 md:py-3">No. of Appearances</th>
                             </tr>
                             </thead>
                             <tbody>
                                     <tr>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">2002–2004</td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Everton</td>
+                                        <td class="md:px-5 md:py-5 border-b border-gray-200 bg-white">Everton</td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">67</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">2004–2017</td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Manchester United</td>
+                                        <td class="md:px-5 md:py-5 border-b border-gray-200 bg-white">Manchester United</td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">393</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">2017–2018</td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Everton</td>
+                                        <td class="md:px-5 md:py-5 border-b border-gray-200 bg-white">Everton</td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">31</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">2018–2020</td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">D.C. United</td>
+                                        <td class="md:px-5 md:py-5 border-b border-gray-200 bg-white">D.C. United</td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">48</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">2020–2021</td>
-                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Derby County</td>
+                                        <td class="md:px-5 md:py-5 border-b border-gray-200 bg-white">Derby County</td>
                                         <td class="px-5 py-5 border-b border-gray-200 bg-white">30</td>
                                     </tr>
                                 </tbody>
@@ -92,13 +96,14 @@
 
                 <div class="flex flex-col">
 
-                    <h3 class="text-center text-lg font-black">Trophies</h3>
+                    <h3 class="text-center title-small">Trophies</h3>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-3 flex flex-col md:flex-row">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-2 items-center">
 
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col flex-initial p-3">
                                 <p>Premier League (5)</p>
@@ -106,9 +111,10 @@
                             </div>
                         </div>
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col  flex-none p-3">
                                 <p>FA Cup (1)</p>
@@ -116,9 +122,10 @@
                             </div>
                         </div>
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col p-3">
                                 <p>EFL Cup (3)</p>
@@ -126,9 +133,10 @@
                             </div>
                         </div>               
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col p-3">
                                 <p>FA Community Shield (4)</p>
@@ -136,9 +144,10 @@
                             </div>
                         </div>
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col p-3">
                                 <p>UEFA Champions League (1)</p>
@@ -146,9 +155,10 @@
                             </div>
                         </div>
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col p-3">
                                 <p>UEFA Europa League (1)</p>
@@ -156,9 +166,10 @@
                             </div>
                         </div>
                         
-                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 ">
+                        <div class="grid grid-rows-2 w-auto p-4 m-3 max-h-[300px] lg:max-h-full border border-gray-300 rounded-md
+                                    transition duration-600 ease-in-out transform hover:scale-110 hover:bg-white hover:border-b-6 hover:border-orange-300">
                             <div class="card-img flex items-center justify-center p-2">
-                               <img class="icon-small" src="/svg/trophy.svg" alt="trophy svg"/>
+                               <img class="icon-small" src="./svg/trophy.svg" alt="trophy svg"/>
                             </div>
                             <div class="flex flex-col p-3">
                                 <p>FIFA Club World Cup (1)</p>
@@ -171,46 +182,52 @@
                 </div>
 
                 <div class="flex flex-col mt-1 p-3">
-                    <section class="flex flex-col items-center justify-center">
-                        <h3 class="text-center text-lg font-black">Goal of the Season 2010/11</h3>
+                    <section class="flex flex-col">
+                        <h3 class="text-center title-small">Goal of the Season 2010/11</h3>
                         <p>The Premier League Goal of the Season is an annual football award for the player to has deemed to have scored the best goal in the Premier League the preceding season. </p>
                         <p>He won the Goal of the Season award for his February 2011 bicycle kick against city rivals Manchester City.</p>
                         <p>Watch the goal here: </p>
-                        <div class="flex-video relative overflow-hidden max-w-full w-full">
+                        <div class="flex flex-col items-center relative overflow-hidden max-w-full w-full">
                             <iframe src="https://player.vimeo.com/video/128691257?h=6f71819da6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                             <p><a href="https://vimeo.com/128691257">Wayne Rooney goal vs Manchester City (12.02.2011)</a> from <a href="https://vimeo.com/deanrayper">DeanRayper</a> on <a href="https://vimeo.com">Vimeo</a>.</p>                        </div>
                     </section>
                 </div>
 
                 <div class="flex flex-col mt-1 p-3">
-                    <h3 class=" text-lg font-black">Send us feedback.</h3>
+                    <h3 class=" title-small">Send us feedback.</h3>
                     <p>We'd love to hear from you</p>
 
-                    <form class="border border-gray-300 p-5">
+                    <div class="flex flex-col mt-5">
+
+                        <form class="border border-gray-300 p-5 my-5 max-w-[80%]">
 
                             <div class="px-3 mb-4">
-                              <label class="block mb-1" for="email">Email</label>
-                              <input id="email" class="py-2 px-3 border border-gray-300 focus:border-grey-300 focus:ring focus:ring-grey-200 rounded-md mt-1 block w-full" />
+                                <label class="block mb-1" for="email">Email</label>
+                                <input id="email" class="py-2 px-3 cursor-pointer caret-red-700  border border-gray-300  focus:border-grey-300 focus:ring focus:ring-grey-200 rounded-md mt-1 block w-full" />
                             </div>
                             
                             <div class="px-3 mb-4">
-                                <label class="block mb-1" for="email">Suggestion</label>
-                                <textarea class="py-2 px-3 border border-gray-300 focus:border-grey-300 focus:ring focus:ring-grey-200 rounded-md mt-1 block w-full"></textarea>
-                              </div>
+                                <label class="block mb-1" for="suggestion">Suggestion</label>
+                                <textarea class="py-2 px-3  caret-red-700  resize-y  border border-gray-300 focus:border-grey-300 focus:ring focus:ring-grey-200 rounded-md mt-1 block w-full"></textarea>
+                            </div>
+
+                            <div class="px-3 mb-4">
+                                <input type="checkbox" class="accent-red-700" checked> Sign up for our monthly newsletter
+                            </div>  
                             
-                              <div class="px-3 mt-6">
-                                <button class="w-full inline-flex items-center justify-center px-4 py-2 bg-red-600 rounded-md text-white hover:bg-red-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 ">
+                            <div class="px-3 mt-6">
+                                <button class=" w-full inline-flex items-center justify-center px-4 py-2 bg-red-600
+                                             rounded-md text-white focus:outline-none focus:border-red-800 cursor-pointer 
+                                             animate-pulse">
                                     Send
                                 </button>
-                              </div>
-                    </form>
+                            </div>
+                        </form>
+                    </div>
                     
                 </div>
 
             </div>
-
-            <div class="hidden lg:flex"></div>
-
 
     </div>
 
@@ -222,10 +239,7 @@
             <p>(c) copyright.</p>
     </div>
 
-<script src="src/js/canvas.js"></script>
-<!-- jQuery must be imported before Foundation -->
-<!--<script src="js/jquery.min.js"></script>-->
-<script src="src/js/index.js"></script>
+<!-- <script src="src/js/index.js"></script> -->
 </html>
       
 
